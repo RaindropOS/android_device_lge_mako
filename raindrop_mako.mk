@@ -24,13 +24,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 TARGET_BOOTANIMATION_SIZE := 720x407
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/raindrop/config/common.mk)
+$(call inherit-product, vendor/raindrop/config/gsm.mk)
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/lge/mako/device.mk)
 
-PRODUCT_NAME := omni_mako
+PRODUCT_NAME := raindrop_mako
 PRODUCT_DEVICE := mako
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 4
